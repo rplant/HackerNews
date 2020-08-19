@@ -14,13 +14,12 @@ export class HackNewsComponent implements OnInit {
   public hackService: HackNewsService;
   pageOfItems: Array<any>;
 
-  constructor(service: HackNewsService, private http: HttpClient,
-    @Inject("BASE_URL") private baseUrl: string) {
+  constructor(service: HackNewsService) {
     this.hackService = service;
   }
 
   ngOnInit(): void {
-    this.hackService.hackProject.subscribe(active => this.hackerNewsStories = active)
+    this.hackService.hackProject.subscribe(active => this.hackerNewsStories = active);
     this.hackService.getNewHackerStories("");
   }
 
