@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md">
+      <form>
+        <!--<mat-form-field>
+          <input matInput placeholder="Search" (keyup)="search($event)">
+        </mat-form-field>-->
+        <input matInput placeholder="Search" (keyup)="search($event)">
+      </form>
+    </div>
+  </div>
+</div>
+
+<p *ngIf="!hackerNewsStories"><em>Loading...</em></p>
+<div *ngIf="hackerNewsStories">
+  <div class="card text-center m-3">
+    <h3 class="card-header">Hacker News</h3>
+    <div class="card-body">
+      <div *ngFor="let item of pageOfItems">
+            <a href="{{item.url}}">{{item.title}}</a>
+      </div>
+    </div>
+    <div class="card-footer pb-0 pt-3">
+      <jw-pagination [items]="hackerNewsStories" (changePage)="onChangePage($event)"></jw-pagination>
+    </div>
+  </div>
+  </div>
+

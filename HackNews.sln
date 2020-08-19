@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackNews", "HackNews\HackNews.csproj", "{0D1F70BE-A20C-48C4-948A-342485885F5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackNewsTests", "HackNewsTests\HackNewsTests.csproj", "{CA81D48A-BAA3-4CA8-ADCC-E13A46F80D8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D1F70BE-A20C-48C4-948A-342485885F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1F70BE-A20C-48C4-948A-342485885F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1F70BE-A20C-48C4-948A-342485885F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1F70BE-A20C-48C4-948A-342485885F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA81D48A-BAA3-4CA8-ADCC-E13A46F80D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA81D48A-BAA3-4CA8-ADCC-E13A46F80D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA81D48A-BAA3-4CA8-ADCC-E13A46F80D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA81D48A-BAA3-4CA8-ADCC-E13A46F80D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B00A9435-AE23-4524-BA86-76BAEA403D94}
+	EndGlobalSection
+EndGlobal
