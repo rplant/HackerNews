@@ -1,6 +1,5 @@
 import { Component, Inject ,OnInit } from '@angular/core';
 import { HackNewsService } from './hack-news.service';
-import { HttpClient } from '@angular/common/http';
 import { HackerNewsStory } from './hack-news-story.model';
 
 
