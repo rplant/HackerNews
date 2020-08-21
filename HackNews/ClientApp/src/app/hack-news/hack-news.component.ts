@@ -23,7 +23,7 @@ export class HackNewsComponent implements OnInit {
   }
 
   search(event: KeyboardEvent) {
-    this.hackService.getNewHackerStories((event.target as HTMLTextAreaElement).value);
+   this.hackService.getNewHackerStories((event.target as HTMLTextAreaElement).value);
   }
 
   open(url: string) {

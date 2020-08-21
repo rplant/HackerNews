@@ -32,12 +32,12 @@ namespace HackNews.Business
                 try
                 {
                     var tasks = newIds.Select(GetStoryAsync);
-                    stories = (await Task.WhenAll(tasks)).ToList();
+                    stories = (await Task.WhenAll(tasks)).Where(s => !string.IsNullOrEmpty(s?.Url)).ToList();
 
                     if (!String.IsNullOrEmpty(searchTerm))
                     {
                         var search = searchTerm.ToLower();
-                        stories = stories.Where(s => (s?.Title.ToLower().IndexOf(search) > -1) && !string.IsNullOrEmpty(s?.Url)).ToList();
+                        stories = stories.Where(s => s?.Title.ToLower().IndexOf(search) > -1).ToList();
                     }
 
                 }
